@@ -1,0 +1,91 @@
+.tree-view {
+  margin: 10px;
+}
+
+atom-text-editor {
+  -webkit-font-smoothing: antialiased;
+  background: #2d3238;
+}
+
+.editor {
+  line-height: 30px;
+  font-size: 14px;
+}
+
+atom-text-editor::shadow .wrap-guide {
+      visibility: hidden;
+}
+
+.icon-file-text, .icon-file-directory, .icon-book {
+    &:before {
+      font-weight: lighter;
+        font-size: 13px;
+        width: 13px;
+        height: 13px;
+    }
+  }
+  .list-item {
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    .icon-file-text, .icon-file-directory, .icon-book {
+        &:before {
+            font-size: 13px;
+            width: 13px;
+            height: 13px;
+        }
+    }
+}
+
+// Hide highlights Line
+atom-text-editor.is-focused::shadow {
+  .line.cursor-line, .line-number.cursor-line-no-selection {
+    background-color: transparent;
+  }
+}
+
+atom-text-editor::shadow .cursor {
+  border-color: #D5B310;
+  border-width: medium;
+  box-sizing: border-box;
+}
+
+
+
+// Terminal Style
+.terminal-plus .xterm {
+  background-color: #21252B;
+
+  ::selection {
+    background-color: ;
+  }
+
+  .terminal-cursor {
+    background-color: #02FDFF ;
+    width: 7px;
+  }
+}
+.tree-view.list-tree li:not(.selected) {
+   color: #fff;
+}
+
+.tree-view.list-tree li.selected {
+  color: #fff;
+}
+
+.tree-view.list-tree :hover {
+  color: #fff;
+}
+
+// Terminal StyleSheet
+.platformio-ide-terminal .xterm {
+  background-color: #23252A ;
+  color: #d6d2d2;
+  ::selection {
+    background-color: red;
+  }
+
+  .terminal-cursor {
+    background-color: #D5B310;
+    width: 3px;
+  }
+}
