@@ -1,0 +1,5 @@
+export PS1="\[\e[01;36m\][\u]\[\e[0m\] \[\e[01;37m\]\W\[\e[0m\] $ "
+alias laravel='~/.composer/vendor/bin/laravel'
+alias xampp='cd /applications/xampp/htdocs'
+alias mamp='cd /Applications/MAMP/htdocs'
+export PATH="$HOME/.node/bin:$PATH"
